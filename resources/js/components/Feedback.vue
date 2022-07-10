@@ -28,7 +28,7 @@
 
         <v-select
             v-model="database"
-            :items="items"
+            :items="[ 'c3', 'default' ]"
             :rules="[v => !!v || 'Database is required']"
             label="Database"
             required
@@ -38,7 +38,7 @@
             :disabled="!valid"
             color="success"
             class="mr-4"
-            @click="save"
+            @click="handleSave"
         >
             Save
         </v-btn>
@@ -50,8 +50,15 @@ import { ref } from 'vue'
 
 export default {
     setup() {
-        const name = ref<string>('');
-        console.log(name);
+        const valid = true
+        const name = ref<string>('')
+        const email = ref('')
+        const database = ref('')
+
+        return {
+            name,
+            valid
+        }
     }
 }
 </script>
