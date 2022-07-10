@@ -1,5 +1,5 @@
 <template>
-    <v-app>
+    <v-app id="inspire">
         <feedback></feedback>
     </v-app>
 </template>
