@@ -12,7 +12,7 @@ const {VuetifyPlugin} = require('webpack-plugin-vuetify')
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+mix.ts('resources/js/app.ts', 'public/js')
     .vue()
     .postCss('resources/css/app.css', 'public/css', [
         //
