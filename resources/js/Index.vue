@@ -1,16 +1,15 @@
 <template>
-    <hello-world></hello-world>
+    <v-app id="inspire">
+        <feedback></feedback>
+    </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/TestComponent'
+import Feedback from './components/Feedback'
+
 export default {
     components: {
-        HelloWorld,
+        Feedback,
     }
 }
 </script>
-
-<style scoped>
-
-</style>

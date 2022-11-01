@@ -1,11 +1,11 @@
 require('./bootstrap');
 
-import { createVuetify } from 'vuetify'
-import { createApp } from 'vue'
-import Index from './Index';
-import store from './store.js';
+import {createVuetify} from 'vuetify'
+import {createApp} from 'vue'
+import Index from './Index.vue';
 import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
+import 'vuetify/dist/vuetify.min.css';
 
 const vuetify = createVuetify({
     components,
@@ -14,5 +14,4 @@ const vuetify = createVuetify({
 
 const app = createApp(Index)
     .use(vuetify)
-    .use(store)
     .mount('#app')
